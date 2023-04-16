@@ -5,6 +5,8 @@ describe('<Main />', () => {
   it('should render the heading', () => {
     render(<Main />);
 
-    expect(screen.getByRole('heading', { name: /teste/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: /THE BEST FOR YOUR PET!/i })
+    ).toBeInTheDocument();
   });
 });
