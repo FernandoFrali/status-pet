@@ -17,6 +17,16 @@ module.exports = {
         'sp-white2': '#F5F5F5',
         'sp-gray': '#303030',
         'sp-gray2': '#A5A4A4',
+        redalpha: 'rgba(226, 0, 255, 0.11)',
+      },
+      inset: {
+        '2px': '4px',
+      },
+      transformOrigin: {
+        test: '50% 100%',
+      },
+      spacing: {
+        '35px': '35px',
       },
       height: {
         705: '705px',
