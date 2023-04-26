@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import Main from '.';
+import Login from '../../src/components/Login/index';
 
-describe('<Main />', () => {
+describe('<Login />', () => {
   it('should render the heading', () => {
-    render(<Main />);
+    render(<Login />);
 
     expect(
       screen.getByRole('heading', { name: /THE BEST FOR YOUR PET!/i })

@@ -5,7 +5,7 @@ import logo from '../../../public/StatusPets.svg';
 import Link from 'next/link';
 import { PawPrint, Key, Dog } from 'phosphor-react';
 
-const Main = () => (
+const Login = () => (
   <main className="selection:text-sp-60 selection:bg-sp-10">
     <div className="h-20 flex">
       <Link href="/" className="w-24">
@@ -86,4 +86,4 @@ const Main = () => (
   </main>
 );
 
-export default Main;
+export default Login;
