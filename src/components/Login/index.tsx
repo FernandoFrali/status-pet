@@ -15,18 +15,18 @@ const Login = () => (
     <div className="justify-center h-screen grid sm:grid-cols-3">
       <Image
         src={dogPic}
-        alt="A dog image"
+        alt="A cute dog"
         className="hidden lg:inline-block lg:row-start-1 lg:-scale-x-100 lg:max-w-fit lg:h-705 lg:w-386 lg:col-start-1 lg:col-end-1 lg:self-center lg:justify-self-end"
       />
       <Image
         src={catPic}
-        alt="A cat image"
+        alt="A cute cat"
         className="hidden lg:inline-block lg:col-start-3 lg:self-center lg:max-w-fit"
       />
       <div className="mb-2 self-end sm:block sm:mt-24 col-start-2 col-end-2 sm:row-start-1 sm:self-start justify-self-center">
         <Image
           src={catPic}
-          alt="A cat image"
+          alt="A cute cat"
           className="select-none sm:hidden"
         />
         <h1 className="text-lg sm:text-right sm:text-4xl font-bold text-sp-10 col-start-2 col-end-2 sm:justify-self-center dark:text-sp-60">
@@ -37,8 +37,8 @@ const Login = () => (
         </p>
       </div>
       <form className="sm:row-start-1 flex flex-col justify-center justify-self-center col-start-2 col-end-2 sm:h-575 sm:mt-28">
-        <label className="dark:text-sp-white2 relative">
-          Pet Name:
+        <label htmlFor="email" className="dark:text-sp-white2 relative">
+          Email:
           <Dog
             color="black"
             size={24}
@@ -47,11 +47,12 @@ const Login = () => (
         </label>
         <input
           className="indent-8 w-80 h-11 drop-shadow-lg border border-bg-light placeholder:italic rounded focus:outline focus:outline-sp-30 focus:border focus:outline-2 dark:bg-transparent dark:border-2 dark:border-sp-gray dark:focus:border-bg-sp-30 dark:focus:outline dark:focus:outline-2 dark:focus:outline-sp-30 dark:text-white"
-          type="text"
-          placeholder="Your best friend's name"
-          name="petname"
+          type="email"
+          placeholder="Type your email here..."
+          name="email"
+          id="email"
         />
-        <label className="relative mt-6 dark:text-sp-white2">
+        <label htmlFor="password" className="relative mt-6 dark:text-sp-white2">
           Password:
           <Key
             color="black"
@@ -63,6 +64,7 @@ const Login = () => (
           className="relative placeholder:italic indent-8 w-80 h-11 drop-shadow-lg rounded border border-bg-light focus:outline focus:outline-sp-30 focus:border focus:outline-2 dark:bg-transparent dark:border-2 dark:border-sp-gray dark:focus:border-bg-sp-30 dark:focus:outline dark:focus:outline-2 dark:focus:outline-sp-30 dark:text-white"
           type="password"
           placeholder="Your password"
+          id="password"
         />
         <button
           type="button"
